@@ -1,0 +1,39 @@
+mixin menu-toggle()
+	+b.toggle-menu-mobile--js.d-md-none
+		span
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.menu-mobile--js
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+mnu()
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row
+				.col
+						+b.logo(href="/")
+							img(src="img/logo.svg", alt="").res-i
+				.col-auto.order-md-0.order-last
+					.menu-mobile.menu-mobile--js
+						.menu-mobile__inner
+							+menu-toggle()
+							+mnu()
+							+e.vk-link(href="#")
+								+icon("vk")
+					
+				.col-auto.d-md-none
+					+menu-toggle()
+		+img('img/sphere-black.png').top-nav__sphere.d-none.d-sm-block
+	// end top-nav

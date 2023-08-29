@@ -1,0 +1,27 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		.container
+			+e.header-container
+				h1.visually-hidden Премя рунета 2023
+				picture
+					source(srcset="img/header-title.svg" media="(min-width: 576px)")
+					img(src='img/header-title-sm.svg')
+				+e.subtitle НАЦИОНАЛЬНАЯ ПРЕМИЯ ЗА ВКЛАД В РАЗВИТИЕ РОССИЙСКОГО СЕГМЕНТА СЕТИ ИНТЕРНЕТ
+			+e.row
+				+e.links-block
+					+e.ministry(href='#')
+						picture
+							source(srcset="img/ministry.png" media="(min-width: 1440px)")
+							img(src='img/ministry-sm.png')
+					+e.association(href='#')
+						picture
+							source(srcset="img/association.png" media="(min-width: 1440px)")
+							img(src='img/association-sm.png')
+				+e.action-block
+					p приём заявок #[span до 28 НОЯБРЯ]
+					+e.btn.btn.main-btn--lg Принять участие
+			+img('img/sphere-strip.png').sphere-strip.d-none.d-sm-block
+			+img('img/premia.png').premia.d-none.d-sm-block
+		+img('img/sphere-gold.png').sphere-gold.d-none.d-sm-block
+	// end headerBlock

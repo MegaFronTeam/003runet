@@ -1,0 +1,25 @@
+
+$file-format: woff2;
+$default-font: "Montserrat";
+$header-font: "BebasNeue";
+$addr: '../fonts/';
+
+
+// If font from googlefont, next lines remove
+
+@include font-face ($default-font, $addr + "MontserratRegular", $file-formats: $file-format);
+@include font-face ($default-font, $addr + "MontserratBold", bold, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "MontserratMedium", 500, $file-formats: $file-format);
+@include font-face ($header-font, $addr + "BebasNeueRegular", 400, $file-formats: $file-format);
+// @include font-face ($default-font, $addr + "Roboto-Black/Roboto-Black", 900, $file-formats: $file-format);
+
+// font-weight helper:
+// 100 Thin
+// 200 Extra Light
+// 300 Light
+// 400 Normal
+// 500 Medium
+// 600 Semi Bold
+// 700 Bold
+// 800 Extra Bold
+// 900 Ultra Bold

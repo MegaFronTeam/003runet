@@ -1,0 +1,29 @@
+{
+	"nav":[
+		{ "name":"Номинанты", "url":"#nominees"},
+		{	"name":"Эксперты", "url":"#experts"},
+		{"name":"Новости", "url":"#news"}
+	],
+	"social":[
+		"fb","instagram","telegram"
+	],
+	"index":{
+		"head": {
+			"title": "Главная"
+		}
+	},
+	"items": [
+			{
+			"title": "заловок",
+			"text": "текст"
+		},
+			{
+			"title": "заловок 22",
+			"text": "текст"
+		},
+			{
+			"title": "заловок 33",
+			"text": "текст"
+			}
+		]
+	}
